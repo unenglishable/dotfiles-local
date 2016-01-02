@@ -5,19 +5,8 @@ unalias s 2>/dev/null
 alias aliens="vi ~/.aliases.local"
 alias sauce=". ~/.aliases.local"
 
-#nodeschools
-alias lyn="learnyounode"
-alias lme="levelmeup"
-alias sta="stream-adventure"
-
 #nodejs
 alias nip="npm install --save"
-
-#tools
-alias ho-brah="foreman"
-alias scoundrel="ember"
-alias d="docker"
-alias dc="docker-compose"
 
 #gittyup
 alias g="git"
