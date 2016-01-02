@@ -1,0 +1,60 @@
+#unaliases
+unalias s 2>/dev/null
+
+#someta
+alias aliens="vi ~/.aliases.local"
+alias sauce=". ~/.aliases.local"
+
+#nodeschools
+alias lyn="learnyounode"
+alias lme="levelmeup"
+alias sta="stream-adventure"
+
+#nodejs
+alias nip="npm install --save"
+
+#tools
+alias ho-brah="foreman"
+alias scoundrel="ember"
+alias d="docker"
+alias dc="docker-compose"
+
+#gittyup
+alias g="git"
+alias ga="git add"
+alias gap="git add -p"
+alias gc="git commit"
+alias gca="git commit --amend"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gf="git fetch"
+alias gh="git checkout"
+alias ghb="git checkout -b"
+alias ghp="git checkout -p"
+alias gka="gitk --all"
+alias gl="git log --graph --abbrev-commit --pretty=oneline --decorate"
+alias gla="git log --all --graph --abbrev-commit --pretty=oneline --decorate"
+alias gp="git pull"
+alias gr="git rebase"
+alias gri="git rebase -i"
+alias gs="git status -sb"
+alias gss="git stash show -p"
+alias gsl="git stash list"
+
+#search
+alias agw=':(){ ag $1 | wc -l };:'
+
+#bash
+alias jesus="exec zsh --login -i"
+alias raptor="jesus"
+alias srsly="sudo"
+alias fucking="sudo"
+alias derp="grep"
+alias duh="du -h"
+alias rem="rm -rf"
+alias cpr="cp -R"
+alias bake="make"
+alias la="ls -a"
+
+#random
+alias lsd="ls"
