@@ -45,6 +45,7 @@ alias rem="rm -rf"
 alias cpr="cp -R"
 alias bake="make"
 alias la="ls -a"
+alias pwd="clear && pwd"
 
 #random
 alias lsd="ls"
