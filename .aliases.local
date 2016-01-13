@@ -34,6 +34,7 @@ alias gsl="git stash list"
 alias agw=':(){ ag $1 | wc -l };:'
 
 #bash
+alias incognito="unset HISTFILE"
 alias jesus="exec zsh --login -i"
 alias raptor="jesus"
 alias srsly="sudo"
