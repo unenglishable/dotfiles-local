@@ -83,7 +83,7 @@ When you just installed a new command, but it hasn't loaded in, so you can't run
 it, this command will reinstate bash for you.  (it kills your session and comes
 back from the dead).
 
-### (sudo aliases)
+### (`sudo` aliases)
 
 These are mostly just for fun :D
 
