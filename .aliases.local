@@ -4,6 +4,7 @@ unalias s 2>/dev/null
 #someta
 alias aliens="vi ~/.aliases.local"
 alias sauce=". ~/.aliases.local"
+alias sorcery="cd $(dirname $(readlink ~/.aliases.local))"
 
 #nodejs
 alias nip="npm install --save"
