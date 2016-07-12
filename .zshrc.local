@@ -1,0 +1,25 @@
+# export GOPATH=$HOME/go
+
+#rbenv stuff
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
+
+# node completion
+# . <(npm completion)
+
+# kubectl completion
+# . $HOME/.kubectl_completion
+
+# nvm stuff
+# export NVM_DIR="/Users/boka/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# functions
+dex(){
+  docker exec -it $1 /bin/bash
+}
+
+links(){
+  DESTINATION=${1:-.}
+  find $DESTINATION -type l -ls -maxdepth 1
+}
