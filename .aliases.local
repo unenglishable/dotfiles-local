@@ -9,6 +9,11 @@ alias aliens="vi ~/.aliases.local"
 alias sauce=". ~/.aliases.local"
 alias sorcery="cd $(dirname $(readlink ~/.aliases.local))"
 
+#tmux
+alias tl="tmux list-sessions"
+alias ta="tmux attach -t"
+alias tn="tmux new -s"
+
 #nodejs
 alias nip="npm install --save"
 
