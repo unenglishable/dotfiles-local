@@ -17,6 +17,9 @@ alias tn="tmux new -s"
 #ipshit
 alias whatismyip="curl ipecho.net/plain ; echo"
 
+#dockermagicshit
+alias dl="docker logs -f"
+
 #nodejs
 alias nip="npm install --save"
 
