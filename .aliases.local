@@ -1,6 +1,9 @@
 #unaliases
 unalias s 2>/dev/null
 
+#vim, for some reason
+alias vi="vim"
+
 #someta
 alias aliens="vi ~/.aliases.local"
 alias sauce=". ~/.aliases.local"
