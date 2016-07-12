@@ -51,7 +51,7 @@ alias gsm="git status -sb | grep \"^[UDA]\{2\}\""
 alias agw=':(){ ag $1 | wc -l };:'
 
 #bash
-alias incognito="unset HISTFILE"
+alias incognito="unset HISTFILE && sed -i '' -e '$ d' /Users/boka/.zhistory"
 alias jesus="exec zsh --login -i"
 alias raptor="jesus"
 alias srsly="sudo"
