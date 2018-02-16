@@ -9,10 +9,6 @@ augroup END
 " use highlighting
 set hlsearch
 
-" bind \ (backward slash) to grep shortcut
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-nnoremap \ :Ag<SPACE>
-
 " add git status line from fugitive
 "set statusline=%f\ %{fugitive#statusline()}
 
