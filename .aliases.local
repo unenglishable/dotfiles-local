@@ -6,6 +6,7 @@ alias vi="vim"
 
 #someta
 alias aliens="vi ~/.aliases.local && . ~/.aliases.local"
+alias sauce=". ~/.aliases.local"
 alias sorcery="cd $(dirname $(readlink ~/.aliases.local))"
 
 #tmux
