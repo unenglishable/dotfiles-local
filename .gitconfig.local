@@ -1,0 +1,7 @@
+[user]
+  name = "unenglishable"
+  email = unenglishable@gmail.com
+[merge]
+  conflictstyle = diff3
+[rerere]
+  enabled = 1
