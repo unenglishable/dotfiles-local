@@ -69,7 +69,9 @@ gup(){
 }
 
 #search
-alias agw=':(){ ag $1 | wc -l };:'
+agw(){
+  ag $1 | wc -l
+}
 
 #bash
 alias incognito="unset HISTFILE && sed -i '' -e '$ d' /Users/boka/.zhistory"
