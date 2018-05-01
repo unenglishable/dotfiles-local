@@ -64,7 +64,9 @@ alias gs="git status -sb"
 alias gss="git stash show -p"
 alias gsl="git stash list"
 alias gsm="git status -sb | grep \"^[UDA]\{2\}\""
-alias gup=':(){ git push . origin/$1:$1 };:'
+gup(){
+  git push . origin/$1:$1
+}
 
 #search
 alias agw=':(){ ag $1 | wc -l };:'
