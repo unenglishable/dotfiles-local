@@ -37,7 +37,9 @@ alias gbd="git branch -d"
 alias gbm="git branch -m"
 alias gc="git commit"
 alias gca="git commit --amend"
-alias gcherry=':(){ git cherry-pick $1^..$2 };:'
+gcherry(){
+  git cherry-pick $1^..$2
+}
 alias gclean='git fetch && git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
 alias gd="git diff"
 alias gdc="git diff --cached"
