@@ -47,7 +47,9 @@ gclone(){
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gf="git fetch"
-alias gff=':(){ git fetch && git push . origin/$1:$1 };:'
+gff(){
+  git fetch && git push . origin/$1:$1
+}
 alias gh="git checkout"
 alias ghb="git checkout -b"
 alias ghp="git checkout -p"
