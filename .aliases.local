@@ -29,6 +29,11 @@ alias dl="docker logs -f"
 #nodejs
 alias nip="npm install --save"
 
+#elixir
+unalias e
+alias e="elixir"
+alias ee="exercism"
+
 #gittyup
 alias g="git"
 alias ga="git add"
