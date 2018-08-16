@@ -41,3 +41,10 @@ set viminfo='20,<1000
 
 "use mac clipboard
 set clipboard=unnamed
+
+" Set up html
+function! HTMLSET()
+  set wm=0
+endfunction
+
+autocmd FileType html call HTMLSET()
