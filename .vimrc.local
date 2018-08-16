@@ -42,6 +42,8 @@ set viminfo='20,<1000
 "use mac clipboard
 set clipboard=unnamed
 
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 " Set up html
 function! HTMLSET()
   set wm=0
