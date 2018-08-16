@@ -14,6 +14,12 @@ alias tl="tmux list-sessions"
 alias ta="tmux attach -t"
 alias tn="tmux new -s"
 
+# pretty print some json
+alias pp="python -m json.tool" # for files, or pipe in a string
+# from clipboard
+alias ppc="pbpaste | python -m json.tool" # pretty print to command line
+alias ppcp="pbpaste | python -m json.tool | pbcopy" # pretty print -> clipboard
+
 #ipshit
 alias whatismyip="curl ipecho.net/plain ; echo"
 
@@ -23,6 +29,11 @@ alias dl="docker logs -f"
 #nodejs
 alias nip="npm install --save"
 
+#elixir
+unalias e
+alias e="elixir"
+alias ee="exercism"
+
 #gittyup
 alias g="git"
 alias ga="git add"
@@ -31,30 +42,48 @@ alias gbd="git branch -d"
 alias gbm="git branch -m"
 alias gc="git commit"
 alias gca="git commit --amend"
-alias gcherry=':(){ git cherry-pick $1^..$2 };:'
+gcherry(){
+  git cherry-pick $1^..$2
+}
 alias gclean='git fetch && git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
+gclone(){
+  git clone git@github.com:$1 $2
+}
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gf="git fetch"
-alias gff=':(){ git fetch && git push . origin/$1:$1 };:'
+gff(){
+  git fetch && git push . origin/$1:$1
+}
 alias gh="git checkout"
 alias ghb="git checkout -b"
 alias ghp="git checkout -p"
 alias gka="gitk --all"
 alias gl="git log --graph --abbrev-commit --pretty=oneline --decorate"
 alias gla="git log --all --graph --abbrev-commit --pretty=oneline --decorate"
+alias glam="git log --all --graph --abbrev-commit --pretty=medium --decorate"
+alias glamp="git log --all --graph --abbrev-commit --pretty=medium --decorate --patch"
+alias glm="git log --graph --abbrev-commit --pretty=medium --decorate"
+alias glmp="git log --graph --abbrev-commit --pretty=medium --decorate --patch"
 alias glp="git log --graph --abbrev-commit --pretty=oneline --decorate --patch"
 alias gp="git pull"
+gpl(){
+  git push . $1:$2
+}
 alias gr="git rebase"
 alias gri="git rebase -i"
 alias gs="git status -sb"
 alias gss="git stash show -p"
 alias gsl="git stash list"
 alias gsm="git status -sb | grep \"^[UDA]\{2\}\""
-alias gup=':(){ git push . origin/$1:$1 };:'
+gup(){
+  git push . origin/$1:$1
+}
 
 #search
-alias agw=':(){ ag $1 | wc -l };:'
+agw(){
+  ag $1 | wc -l
+}
 
 #bash
 alias incognito="unset HISTFILE && sed -i '' -e '$ d' /Users/boka/.zhistory"

@@ -41,3 +41,18 @@ set viminfo='20,<1000
 
 "use mac clipboard
 set clipboard=unnamed
+
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'elixir', 'node=javascript', 'js=javascript']
+
+" Disable linting in elixir so iex works
+let g:ale_linters = {
+      \  'elixir': []
+      \}
+
+" Set up html
+function! HTMLSET()
+  set wm=0
+endfunction
+
+autocmd FileType html call HTMLSET()
