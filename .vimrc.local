@@ -43,6 +43,7 @@ set viminfo='20,<1000
 set clipboard=unnamed
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'elixir', 'node=javascript', 'js=javascript']
 
 " Set up html
 function! HTMLSET()
