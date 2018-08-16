@@ -1,4 +1,6 @@
 Plug 'fatih/vim-go'
+Plug 'mattn/emmet-vim'
+Plug 'alvan/vim-closetag'
 Plug 'Keithbsmiley/swift.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'jtratner/vim-flavored-markdown'
