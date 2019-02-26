@@ -89,7 +89,7 @@ agw(){
 
 #bash
 alias incognito="unset HISTFILE && sed -i '' -e '$ d' /Users/boka/.zhistory"
-alias jesus="exec zsh --login -i"
+alias jesus="exec $SHELL --login -i"
 alias raptor="jesus"
 alias srsly="sudo"
 alias fucking="sudo"
