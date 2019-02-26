@@ -1,8 +1,8 @@
 #unaliases
-unalias s 2>/dev/null
+#unalias s 2>/dev/null
 
 #vim, for some reason
-alias vi="vim"
+#alias vi="vim"
 
 #someta
 alias aliens="vi ~/.aliases.local && . ~/.aliases.local"
@@ -30,7 +30,7 @@ alias dl="docker logs -f"
 alias nip="npm install --save"
 
 #elixir
-unalias e
+#unalias e
 alias e="elixir"
 alias ee="exercism"
 
