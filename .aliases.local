@@ -25,6 +25,10 @@ alias whatismyip="curl ipecho.net/plain ; echo"
 
 #dockermagicshit
 alias dl="docker logs -f"
+dclean(){
+  docker rm $(docker ps -aq --no-trunc -f status=exited)
+  docker rmi $(docker images -f dangling=true -q)
+}
 
 #nodejs
 alias nip="npm install --save"
