@@ -14,9 +14,9 @@ alias tl="tmux list-sessions"
 alias ta="tmux attach -t"
 alias tn="tmux new -s"
 
-# pretty print some json
+#pretty print some json
 alias pp="python -m json.tool" # for files, or pipe in a string
-# from clipboard
+#from clipboard
 alias ppc="pbpaste | python -m json.tool" # pretty print to command line
 alias ppcp="pbpaste | python -m json.tool | pbcopy" # pretty print -> clipboard
 
@@ -25,6 +25,10 @@ alias whatismyip="curl ipecho.net/plain ; echo"
 
 #dockermagicshit
 alias dl="docker logs -f"
+dclean(){
+  docker rm $(docker ps -aq --no-trunc -f status=exited)
+  docker rmi $(docker images -f dangling=true -q)
+}
 
 #nodejs
 alias nip="npm install --save"
@@ -89,6 +93,9 @@ agw(){
 
 #bash
 alias incognito="unset HISTFILE && sed -i '' -e '$ d' /Users/boka/.zhistory"
+vanish(){
+  incognito && open $1 && exit
+}
 alias jesus="exec $SHELL --login -i"
 alias raptor="jesus"
 alias srsly="sudo"
