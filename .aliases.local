@@ -75,9 +75,7 @@ alias glp="git log --graph --abbrev-commit --pretty=oneline --decorate --patch"
 alias gm="git log --merges --graph --abbrev-commit --pretty=medium --decorate -m"
 alias gmp="git log --merges --graph --abbrev-commit --pretty=medium --decorate -m --patch"
 alias gp="git pull"
-gpl(){
-  git push . $1:$2
-}
+alias gpl="git push ."
 alias gr="git rebase"
 alias gri="git rebase -i"
 alias gs="git status -sb"
