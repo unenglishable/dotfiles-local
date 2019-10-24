@@ -57,6 +57,9 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias gf="git fetch"
 gff(){
+  git push . origin/$1:$1
+}
+gfff(){
   git fetch && git push . origin/$1:$1
 }
 alias gh="git checkout"
