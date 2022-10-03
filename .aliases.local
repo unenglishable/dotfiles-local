@@ -90,9 +90,8 @@ gup(){
 agw(){
   ag $1 | wc -l
 }
-
 #bash
-alias incognito="unset HISTFILE && sed -i '' -e '$ d' /Users/boka/.zhistory"
+alias incognito="unset HISTFILE && sed -i '' -e '$ d' $HOME/.zhistory"
 vanish(){
   incognito && open $1 && exit
 }
