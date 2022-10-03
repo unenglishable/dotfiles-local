@@ -1,0 +1,79 @@
+
+
+# # Commit format (via Angular)
+#
+# <type>(<scope>): <subject>
+# <BLANK LINE>
+# <body>
+# <BLANK LINE>
+# <footer>
+#
+# Any line of the commit message cannot be longer than 100 characters
+#
+#
+## Commit types
+#
+# build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+# ci: Changes to our CI configuration files and scripts (example scopes: Circle, BrowserStack, SauceLabs)
+# docs: Documentation only changes
+# feat: A new feature
+# fix: A bug fix
+# perf: A code change that improves performance
+# refactor: A code change that neither fixes a bug nor adds a feature
+# style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+# test: Adding missing tests or correcting existing tests
+# revert: Reverts a previous commit
+# yolo: [DEPRECATED] DO NOT USE THIS TAG
+#
+#
+## Reverting a commit
+#
+# Use tag "revert():" followed by the header of the reverted commit
+# In the body it should say: "This reverts commit <hash>.", where the hash is the SHA of the commit being reverted.
+#
+#
+## Subject Guidelines
+#
+# "The subject contains a succinct description of the change:
+#
+# use the imperative, present tense: "change" not "changed" nor "changes"
+# don't capitalize the first letter
+# no dot (.) at the end"
+#
+# eg(good): "add user info to model"
+# eg(bad/tense): "added user info to model"
+# eg(bad/non-imperative): "adds user info to model"
+#
+#  WHY THOUGH?
+# A helpful tip -- when you read the message it should say what the commit does.
+# Each commit message should help the reader skim over the actions that happened
+# to create a feature or fix a bug, etc...
+#
+#
+## Body Guidelines
+#
+# Just as in the subject, use the imperative, present tense: "change"
+# not "changed" nor "changes".
+#
+# The body should include:
+#
+# * motivation for the change
+# * contrast this with previous behavior.
+#
+# Keep these helpful questions in mind...
+#
+# * Why was this change necessary?
+# * How does it address the problem?
+# * Are there any side effects?
+#
+#
+## Footer Guidelines
+# (Directly from Angular's Commit Formatting guidelines)
+#
+# The footer should contain any information about Breaking Changes
+# and is also the place to reference `GitHub issues` that this commit Closes.
+# (eg: "closes #69" or "resolves #420")
+#
+# Breaking Changes should start with the word BREAKING CHANGE:
+# with a space or two newlines.
+# The rest of the commit message is then used for this.
