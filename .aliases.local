@@ -30,6 +30,9 @@ dclean(){
   docker rmi $(docker images -f dangling=true -q)
 }
 
+#asdf
+alias asdfreshim="rm -rf ~/.asdf/shims && asdf reshim"
+
 #nodejs
 alias nip="npm install --save"
 
