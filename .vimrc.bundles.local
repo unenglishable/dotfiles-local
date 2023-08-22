@@ -10,5 +10,5 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-surround'
 Plug 'roman/golden-ratio'
 " Be careful, these two need to go in this order...
-Plug 'jelera/vim-javascript-syntax'
-Plug 'pangloss/vim-javascript'
+"Plug 'jelera/vim-javascript-syntax'
+"Plug 'pangloss/vim-javascript'
