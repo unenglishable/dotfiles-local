@@ -22,6 +22,8 @@ alias ppcp="pbpaste | python -m json.tool | pbcopy" # pretty print -> clipboard
 
 #ipshit
 alias whatismyip="curl ipecho.net/plain ; echo"
+# renew dhcp lease
+alias dhcpr="sudo ipconfig set en0 DHCP; ipconfig getpacket en0"
 
 #dockermagicshit
 alias dl="docker logs -f"
