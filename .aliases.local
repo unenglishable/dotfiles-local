@@ -112,6 +112,9 @@ gup(){
 agw(){
   ag $1 | wc -l
 }
+agc(){ # search a file ($2) for instances of a word ($1)
+  ag $1 $2 -c
+}
 #bash
 alias incognito="unset HISTFILE && sed -i '' -e '$ d' $HOME/.zhistory"
 vanish(){
