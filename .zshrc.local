@@ -14,6 +14,9 @@
 # export NVM_DIR="/Users/boka/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# asdf stuff
+export PATH=~/.asdf/shims:$PATH
+
 # functions
 dex(){
   docker exec -it $1 /bin/bash
