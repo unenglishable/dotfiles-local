@@ -63,3 +63,8 @@ syntax on
 " Enables filetype detection, loads ftplugin, and loads indent
 " (Not necessary on nvim and may not be necessary on vim 8.2+)
 filetype plugin indent on
+
+" Don't change my cursor! in ctrlp
+" autocmd OptionSet guicursor noautocmd set guicursor=
+" set guicursor=
+:set guicursor+=n:hor20-Cursor/lCursor
