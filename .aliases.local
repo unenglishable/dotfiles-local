@@ -56,6 +56,22 @@ alias gclean='git fetch && git branch --merged | egrep -v "(^\*|master|main)" | 
 gclone(){
   git clone git@github.com:$1 $2
 }
+gcount() {
+  BASE=$1
+  COMPARE=$2
+  echo "\033[32m$COMPARE\033[39m is ..."
+  echo -e "\033[30m\033[41mbehind\t\033[42mahead\033[39m\033[49m"
+  git rev-list --left-right --count $1...$2
+  echo -e "... commits of \033[31m$BASE\033[39m"
+}
+gcountr() {
+  BASE=origin/$1
+  COMPARE=$1
+  echo "\033[32m$COMPARE\033[39m is ..."
+  echo -e "\033[30m\033[41mbehind\t\033[42mahead\033[39m\033[49m"
+  git rev-list --left-right --count $BASE...$COMPARE
+  echo -e "... commits of \033[31m$BASE\033[39m"
+}
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gf="git fetch"
